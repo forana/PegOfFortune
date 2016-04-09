@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #369;
+    margin: 10px;
+}
+
+.puzzle {
+    border: 6px solid #cc6;
+    width: 1000px;
+    background-color: #063;
+}
+
+.puzzle .letter {
+    display: inline-block;
+    vertical-align: top;
+    font-family: monospace;
+    color: rgba(0,0,0,0);
+    background-color: #396;
+    width: 58px;
+    height: 78px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 10px;
+    border: 4px solid #cc6;
+}
+
+.puzzle .letter.revealed {
+    color: #fff;
+}
+
+.puzzle .letter-32 {
+    visibility: hidden;
+}
+
+.puzzle .category {
+    font-family: monospace;
+    color: #fff;
+    background-color: #396;
+    height: 32px;
+    font-size: 24px;
+    border: 4px solid #cc6;
+    border-radius: 16px;
+    padding: 0 16px;
+}
+
+#graphics > * {
+    border: 6px solid #cc6;
+}
+
+canvas {
+    margin: 0;
+    display: block;
+}

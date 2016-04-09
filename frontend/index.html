@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>It's my turn to spin</title>
+
+        <script src="/thirdparty/matter.min.js"></script>
+        <script src="/thirdparty/underscore.min.js"></script>
+        <script src="/thirdparty/angular.min.js"></script>
+        <script src="/js/game.js"></script>
+        <link rel="stylesheet" type="text/css" href="/thirdparty/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/game.css"/>
+    </head>
+    <body ng-app="GameApp" ng-controller="GameController">
+        <div id="solution">
+            <div class="puzzle">
+                <div ng-repeat="line in puzzle.lines track by $index" class="line">
+                    <div ng-repeat="l in line track by $index" class="letter letter-{{l.char.charCodeAt(0)}}" ng-class="{revealed: l.revealed}">{{l.char}}</div>
+                </div>
+                <span class="category">{{puzzle.category}}</span>
+            </div>
+        </div>
+        <div id="graphics"></div>
+    </body>
+</html>
