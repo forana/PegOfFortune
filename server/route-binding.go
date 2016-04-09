@@ -3,7 +3,7 @@ package server
 import (
 	"github.com/gorilla/mux"
 
-	"github.com/forana/luckball/server/routes"
+	"github.com/forana/PegOfFortune/server/routes"
 )
 
 func bindRoutes(router *mux.Router) {

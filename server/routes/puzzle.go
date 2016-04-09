@@ -3,7 +3,7 @@ package routes
 import (
 	"net/http"
 
-	"github.com/forana/luckball/server/puzzles"
+	"github.com/forana/PegOfFortune/server/puzzles"
 )
 
 // GetPuzzle retrieves a new random puzzle.

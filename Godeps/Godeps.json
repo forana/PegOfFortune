@@ -1,7 +1,10 @@
 {
-	"ImportPath": "github.com/forana/luckball",
+	"ImportPath": "github.com/forana/PegOfFortune",
 	"GoVersion": "go1.6",
 	"GodepVersion": "v60",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/codegangsta/negroni",
