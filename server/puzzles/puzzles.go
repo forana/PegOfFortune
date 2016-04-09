@@ -1,8 +1,7 @@
 package puzzles
 
 import (
-	"github.com/jmoiron/sqlx"
-	_ "github.com/mattn/go-sqlite3" // shh
+	"math/rand"
 )
 
 // Puzzle represents a puzzle
@@ -12,18 +11,18 @@ type Puzzle struct {
 	Solution string `json:"solution"`
 }
 
-var conn *sqlx.DB
+var puzzles = []*Puzzle{}
 
 func init() {
-	var err error
-	conn, err = sqlx.Open("sqlite3", "puzzles.db")
-	if err != nil {
-		panic(err)
+	puzzles = []*Puzzle{
+		&Puzzle{ID: "abc", Category: "Food", Solution: "Pork Chop\nSandwiches"},
+		&Puzzle{ID: "def", Category: "Thing", Solution: "Spooky Scary\nSkeletons"},
+		&Puzzle{ID: "ghi", Category: "Question", Solution: "What's in\nthe box?"},
+		&Puzzle{ID: "jkl", Category: "Testing", Solution: "Testing this,\nI am testing"},
 	}
 }
 
 // GetNew retrieves a puzzle that is not the one the player just saw.
-func GetNew(excludeID string) (*Puzzle, error) {
-	puzzle := &Puzzle{}
-	return puzzle, conn.Get(puzzle, "select id, category, solution from puzzles where id <> $1 order by random() limit 1", excludeID)
+func GetNew() *Puzzle {
+	return puzzles[rand.Intn(len(puzzles))]
 }
