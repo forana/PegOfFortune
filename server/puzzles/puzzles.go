@@ -18,7 +18,7 @@ func init() {
 		&Puzzle{ID: "abc", Category: "Food", Solution: "Pork Chop\nSandwiches"},
 		&Puzzle{ID: "def", Category: "Thing", Solution: "Spooky Scary\nSkeletons"},
 		&Puzzle{ID: "ghi", Category: "Question", Solution: "What's in\nthe box?"},
-		&Puzzle{ID: "jkl", Category: "Testing", Solution: "Testing this,\nI am testing"},
+		&Puzzle{ID: "jkl", Category: "Testing", Solution: "Testing this\nI am testing"},
 	}
 }
 
