@@ -1,0 +1,35 @@
+{
+	"ImportPath": "github.com/forana/luckball",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v60",
+	"Deps": [
+		{
+			"ImportPath": "github.com/codegangsta/negroni",
+			"Comment": "v0.1-70-gc7477ad",
+			"Rev": "c7477ad8e330bef55bf1ebe300cf8aa67c492d1b"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "acf3be1b335c8ce30b2c8d51300984666f0ceefa"
+		},
+		{
+			"ImportPath": "github.com/jmoiron/sqlx",
+			"Comment": "sqlx-v1.1-45-g3a92b1f",
+			"Rev": "3a92b1fd96032c4490fa618370fbf98ec69b680c"
+		},
+		{
+			"ImportPath": "github.com/jmoiron/sqlx/reflectx",
+			"Comment": "sqlx-v1.1-45-g3a92b1f",
+			"Rev": "3a92b1fd96032c4490fa618370fbf98ec69b680c"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-sqlite3",
+			"Comment": "v1.1.0-11-gb808f01",
+			"Rev": "b808f01f660667b1510acf216aa2b9fe7f555ddb"
+		}
+	]
+}
